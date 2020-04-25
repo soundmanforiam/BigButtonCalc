@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Big Button Calc</title>
+    <meta name="desription" content="">
+    <meta name="author" content="Charlie Holmes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="calc.css">
+</head>
+<body>
+<div class="calc-wrapper">
+    <Div id="display"></Div>
+        
+    <Div class="btn-Wrapper">
+        
+        <Div id="7" class="buttons" onclick="display(7)">7</Div>
+        <Div id="8" class="buttons" onclick="display(8)">8</Div>
+        <Div id="9" class="buttons" onclick="display(9)">9</Div>
+        <Div id="Divide" class="buttons alt-btn" onclick="display('/')">/</Div>
+        
+        <Div id="4" class="buttons" onclick="display(4)">4</Div>
+        <Div id="5" class="buttons" onclick="display(5)">5</Div>
+        <Div id="6" class="buttons" onclick="display(6)">6</Div>
+        <Div id="Multiply" class="buttons alt-btn" onclick="display('*')">*</Div>
+        
+        <Div id="1" class="buttons" onclick="display(1)">1</Div>
+        <Div id="2" class="buttons" onclick="display(2)">2</Div>
+        <Div id="3" class="buttons" onclick="display(3)">3</Div>
+        <Div id="Subtract" class="buttons alt-btn" onclick="display('-')">-</Div>
+        
+        <Div id="Clear" class="buttons" onclick="clr()">C</Div>
+        <Div id="0" class="buttons" onclick="display(0)">0</Div>
+        <Div id="Dot" class="buttons" onclick="display('.')">.</Div>
+        <Div id="Addition" class="buttons alt-btn" onclick="display('+')">+</Div>
+        
+        
+    </Div>
+    <Div id="Equals" onclick="result(document.getElementById('display').innerText)">=</Div>
+</div>
+<script type="text/javascript" src="calc.js"></script>
+</body>
+</html>
